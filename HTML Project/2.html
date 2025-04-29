@@ -1,0 +1,58 @@
+<!--3D Rotating Solar System 🌍-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+        }
+
+        .sun {
+            width: 80px;
+            height: 80px;
+            background: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 50px yellow;
+            position: absolute;
+        }
+
+        .planet {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: blue;
+            border-radius: 50%;
+            animation: orbit 5s linear infinite;
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(120px) rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg) translateX(120px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+    <div class="planet"></div>
+</body>
+
+</html>

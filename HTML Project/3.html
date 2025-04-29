@@ -1,0 +1,32 @@
+<!--3. Digital Clock with Date ⏰-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            color: lime;
+            font-size: 3rem;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock"></div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById("clock").innerText = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+
+</html>

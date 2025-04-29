@@ -1,0 +1,1 @@
+Output in scientific notation with three decimal places
